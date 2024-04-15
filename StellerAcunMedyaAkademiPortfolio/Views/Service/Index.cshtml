@@ -1,0 +1,32 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblService>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Icon</th>
+        <th>Servis Adı</th>
+        <th>Servis Durumu</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ServiceId</th>
+            <td><img src="@item.ServiceIconUrl" style="height:50px; width:50px" /></td>
+            <td>@item.ServiceName</td>
+            <td>@item.ServiceStatus</td>
+            <td><a href="/Service/DeleteService/@item.ServiceId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Service/UpdateService/@item.ServiceId" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Service/AddService" class="btn btn-outline-primary">Yeni Hakkımızda Bilgisi Ekle</a>

@@ -1,0 +1,18 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "AddSocialMedia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddSocialMedia</h2>
+
+<br />
+<form method="post">
+    <input type="text" name="Icon" class="form-control" placeholder=" Icon Giriniz" required />
+    <br />
+    <input type="text" name="SocialMediaName" class="form-control" placeholder="Sosyal Medya Giriniz" required />
+    <br />
+    <input type="text" name="url" class="form-control" placeholder="Url Giriniz" required />
+    <br />
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

@@ -1,0 +1,46 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblProject>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<h2>Index</h2>
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Resim</th>
+        <th>Başlık</th>
+        <th>GithubUrl</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ProjectId</th>
+            <td><img src="@item.ImageUrl" style="height:50px; width:50px" /></td>
+            <td>@item.Title</td>
+            <td><a href="@item.GithubUrl" target="_blank"> Github Linki</a></td>
+            <td>
+                @if (item.Description.Length > 50)
+                {
+                    @item.Description.Substring(0, 50)
+                }
+                else
+                {
+                    @item.Description
+                }
+            </td>
+            <td><a href="/Project/DeleteProject/@item.ProjectId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Project/UpdateProject/@item.ProjectId" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Project/AddProject" class="btn btn-outline-primary">Yeni Hakkımızda Bilgisi Ekle</a>

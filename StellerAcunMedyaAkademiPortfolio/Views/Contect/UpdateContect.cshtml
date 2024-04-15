@@ -1,0 +1,20 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblContect
+@{
+    ViewBag.Title = "UpdateContect";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim Bilgisi Güncelleme Sayfası</h2>
+<br />
+<form method="post">
+    <input type="hidden" name="ContectId" value="@Model.ContectId"/>
+    <input type="text" name="Address" class="form-control" value="@Model.Address" placeholder="Adres Giriniz" required />
+    <br />
+    <input type="tel" name="Phone" class="form-control" value="@Model.Phone" placeholder="Telefon Numarası Giriniz" required />
+    <br />
+    <input type="email" name="Email" class="form-control" value="@Model.Email" placeholder="E-Mail Giriniz" required />
+    <br />
+    <input type="text" name="MapUrl" class="form-control" value="@Model.MapUrl" placeholder="Map Url Giriniz" required />
+    <br />
+    <button class="btn btn-outline-warning">Güncelle</button>
+</form>

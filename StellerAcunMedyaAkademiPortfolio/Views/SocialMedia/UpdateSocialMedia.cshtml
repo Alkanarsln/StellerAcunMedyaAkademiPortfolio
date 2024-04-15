@@ -1,0 +1,19 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>UpdateSocialMedia</h2>
+
+<br />
+<form method="post">
+    <input  type="hidden" name="SocialMediaId" value="@Model.SocialMediaId"/>
+    <input type="text" name="Icon" class="form-control" value="@Model.Icon" placeholder=" Icon Giriniz" required />
+    <br />
+    <input type="text" name="SocialMediaName" class="form-control" value="@Model.SocialMediaName" placeholder="Sosyal Medya Giriniz" required />
+    <br />
+    <input type="text" name="url" class="form-control" value="@Model.Url" placeholder="Url Giriniz" required />
+    <br />
+    <button class="btn btn-outline-warning">Güncelle</button>
+</form>

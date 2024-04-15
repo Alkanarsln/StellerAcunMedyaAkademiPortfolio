@@ -1,0 +1,36 @@
+﻿@model List<StellerAcunMedyaAkademiPortfolio.Models.TblContect>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h2>İletişim Bilgileri</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Telefon</th>
+        <th>Mail</th>
+        <th>Adres</th>
+        <th>Harita Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.Phone</td>
+            <td>@item.Email</td>
+            <td>@item.Address</td>
+            <td><a href="@item.MapUrl" target="_blank" >Harita Linki</a></td>
+            <td><a href="/Contect/DeleteContect/@item.ContectId" class="btn btn-outline-info">Sil</a></td>
+            <td><a href="/Contect/UpdateContect/@item.ContectId" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<br />
+<td><a href="/Contect/CreateContect/" class="btn btn-outline-success">Yeni İletişim Bilgileri Giriiş</a></td>

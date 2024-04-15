@@ -1,0 +1,20 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "AddAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Yeni Hakkımızda Ekleme Sayfası</h3>
+<br />
+
+<form  method="post">
+    <input type="text" name="ImageUrl" class="form-control" placeholder="Resim Url Giriniz" />
+    <br />
+    <input type="text" name="NameSurname" class="form-control" placeholder="İsim Soyisim Giriniz" />
+    <br />
+    <input type="text" name="Title" class="form-control" placeholder="Ünvan  Giriniz" />
+    <br />
+    <input type="text" name="Description" class="form-control" placeholder="Başlık Giriniz" />
+    <br />
+    <button class="btn btn-outline-primary"> Kaydet </button>
+</form>

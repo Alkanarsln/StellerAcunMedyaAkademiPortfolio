@@ -1,0 +1,18 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblService
+@{
+    ViewBag.Title = "AddService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddService</h2>
+
+<br />
+<form method="post">
+    <input type="text" name="ServiceIconUrl" class="form-control" placeholder="Icon Giriniz" required />
+    <br />
+    <input type="text" name="ServiceName" class="form-control" placeholder="Servis Adını Giriniz" required />
+    <br />
+    <input type="text" name="ServiceStatus" class="form-control" placeholder="Servis Durumu Giriniz" required />
+    <br />
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

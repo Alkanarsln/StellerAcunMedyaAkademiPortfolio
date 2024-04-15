@@ -1,0 +1,19 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblContect
+@{
+    ViewBag.Title = "CreateContect";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni İLetişim Bilgisi Ekleme Sayfası</h2>
+<br />
+<form method="post">
+    <input type="text" name="Address"  class="form-control" placeholder="Adres Giriniz" required/>
+    <br />
+    <input type="tel" name="Phone" class="form-control" placeholder="Telefon Numarası Giriniz" required/>
+    <br />
+    <input type="email" name="Email" class="form-control" placeholder="E-Mail Giriniz" required />
+    <br />
+    <input type="text" name="MapUrl"  class="form-control" placeholder="Map Url Giriniz" required/>
+    <br />
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>
