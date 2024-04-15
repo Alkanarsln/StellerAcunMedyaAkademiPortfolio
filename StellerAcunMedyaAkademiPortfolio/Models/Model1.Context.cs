@@ -34,5 +34,6 @@ namespace StellerAcunMedyaAkademiPortfolio.Models
         public virtual DbSet<TblService> TblService { get; set; }
         public virtual DbSet<TblSkill> TblSkill { get; set; }
         public virtual DbSet<TblSocialMedia> TblSocialMedia { get; set; }
+        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
     }
 }

@@ -21,14 +21,16 @@
     {
         <tr>
             <th>@item.TestimonialID</th>
-            <td>@item.ImageURL</td>
+            <td><img src="@item.ImageURL" style="height:50px;width:50px;" /></td>
             <td>@item.NameSurname</td>
             <td>@item.Title</td>
             <td>@item.Description</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            <td><a href="Testimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-danger">Sil</a></td>
+            <td><a href="Testimonial/UpdateTestimonial/@item.TestimonialID" class="btn btn-success">Güncelle</a></td>
         </tr>
 
     }
 
 </table>
+<br />
+<a href="/Testimonial/AddTestimonial" class="btn btn-outline-primary">Yeni Referans Ekle</a>

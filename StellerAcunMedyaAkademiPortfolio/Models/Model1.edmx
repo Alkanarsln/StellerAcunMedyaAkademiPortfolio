@@ -10,10 +10,18 @@
             <PropertyRef Name="AboutID" />
           </Key>
           <Property Name="AboutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="500" />
           <Property Name="NameSurname" Type="nvarchar" MaxLength="30" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
           <Property Name="ImageUrl" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TblContect">
           <Key>
@@ -95,6 +103,7 @@
         </EntityType>
         <EntityContainer Name="StellerAcunMedyaDbModelStoreContainer">
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblContect" EntityType="Self.TblContect" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblFeature" EntityType="Self.TblFeature" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblMessage" EntityType="Self.TblMessage" Schema="dbo" store:Type="Tables" />
@@ -128,6 +137,7 @@
           <EntitySet Name="TblService" EntityType="StellerAcunMedyaDbModel.TblService" />
           <EntitySet Name="TblSkill" EntityType="StellerAcunMedyaDbModel.TblSkill" />
           <EntitySet Name="TblSocialMedia" EntityType="StellerAcunMedyaDbModel.TblSocialMedia" />
+          <EntitySet Name="TblAdmin" EntityType="StellerAcunMedyaDbModel.TblAdmin" />
         </EntityContainer>
         <EntityType Name="TblAbout">
           <Key>
@@ -206,6 +216,14 @@
           <Property Name="Icon" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="SocialMediaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -307,6 +325,15 @@
                 <ScalarProperty Name="SocialMediaName" ColumnName="SocialMediaName" />
                 <ScalarProperty Name="Icon" ColumnName="Icon" />
                 <ScalarProperty Name="SocialMediaId" ColumnName="SocialMediaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAdmin">
+            <EntityTypeMapping TypeName="StellerAcunMedyaDbModel.TblAdmin">
+              <MappingFragment StoreEntitySet="TblAdmin">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="AdminID" ColumnName="AdminID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

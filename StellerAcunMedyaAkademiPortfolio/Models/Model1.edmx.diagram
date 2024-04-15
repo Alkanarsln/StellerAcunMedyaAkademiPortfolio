@@ -14,6 +14,7 @@
         <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblService" Width="1.5" PointX="0.75" PointY="6.75" />
         <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblSkill" Width="1.5" PointX="2.75" PointY="6.75" />
         <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblSocialMedia" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="StellerAcunMedyaDbModel.TblAdmin" Width="1.5" PointX="5.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

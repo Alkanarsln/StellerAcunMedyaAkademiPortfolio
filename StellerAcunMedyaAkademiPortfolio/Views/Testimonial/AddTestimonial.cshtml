@@ -1,0 +1,20 @@
+﻿@model StellerAcunMedyaAkademiPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "AddTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AddTestimonial</h2>
+
+<br />
+<form method="post">
+    <input type="text" name="NameSurname" class="form-control" placeholder="İsim Soyisim Giriniz" required />
+    <br />
+    <input type="text" name="ImageURL" class="form-control" placeholder="Resim Adresi Giriniz" required />
+    <br />
+    <input type="text" name="Title" class="form-control" placeholder="Başlık Giriniz" required />
+    <br />
+    <input type="text" name="Description" class="form-control" placeholder="Açıklama Giriniz" required />
+    <br />
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

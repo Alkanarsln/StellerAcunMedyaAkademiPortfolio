@@ -23,7 +23,7 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public ActionResult AddRTestimonial()
+        public ActionResult AddTestimonial()
         {
             return View();
         }
