@@ -41,5 +41,35 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public PartialViewResult DefaultServicePartial()
+        {
+            var values = db.TblService.Where(x=>x.ServiceStatus==true).ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult DefaultSkillPartial()
+        {
+            var values = db.TblSkill.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult DefaultProjectPartial()
+        {
+            var values = db.TblProject.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult DefaultTestimonialPartial()
+        {
+            var values = db.TblTestimonial.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult DefaultContactPartial()
+        {
+            var values = db.TblContect.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult UILayoutFooterPartial()
+        {
+            var values = db.TblSocialMedia.ToList();
+            return PartialView(values);
+        }
     }
 }

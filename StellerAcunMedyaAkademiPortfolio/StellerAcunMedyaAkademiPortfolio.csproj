@@ -140,6 +140,7 @@
     <Compile Include="Controllers\SkillController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
+    <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -534,6 +535,14 @@
     <Content Include="Views\Default\DefaultAboutPartial.cshtml" />
     <Content Include="Views\Default\SendMessage.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\UILayout\Index.cshtml" />
+    <Content Include="Views\Default\DefaultServicePartial.cshtml" />
+    <Content Include="Views\Default\DefaultSkillPartial.cshtml" />
+    <Content Include="Views\Default\DefaultProjectPartial.cshtml" />
+    <Content Include="Views\Default\DefaultTestimonialPartial.cshtml" />
+    <Content Include="Views\Default\DefaultContactPartial.cshtml" />
+    <Content Include="Views\UILayout\UILayoutFooterPartial.cshtml" />
+    <Content Include="Views\Default\UILayoutFooterPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
