@@ -12,7 +12,7 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
         StellerAcunMedyaDbEntities db = new StellerAcunMedyaDbEntities();
         public ActionResult Index()
         {
-            var values = db.TblMessage.ToList();
+            var values = db.TblMessage.Where(x => x.IsRead == false).ToList();
             return View(values);
         }
 
@@ -22,6 +22,13 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             db.TblMessage.Remove(values);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public ActionResult MessageDetail(int id)
+        {
+            var message = db.TblMessage.Find(id);
+            message.IsRead = true;
+            db.SaveChanges();
+            return View(message);
         }
 
         [HttpGet]
