@@ -29,6 +29,7 @@ Proje'yi çalıştırmak için aşağıdaki adımları izleyin:
 4. Tarayıcınızda `https://localhost:port` adresine giderek projeyi görüntüleyin.
 
 # Projeye Ait Ekran Görüntüleri
+![Ekran görüntüsü 2024-05-13 222610](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/1e55d805-e978-4ffb-aa25-5dddc66c7d70)
 ![Ekran görüntüsü 2024-05-13 222629](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/08f8ffc1-8737-4b41-b8b9-a2d1392ea499)
 ![Ekran görüntüsü 2024-05-13 222633](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/67a65e09-5b86-4f4e-90c6-6acea1ab3cee)
 ![Ekran görüntüsü 2024-05-13 222649](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/81c96585-7131-4af3-b5bc-b69483fe7ff4)
