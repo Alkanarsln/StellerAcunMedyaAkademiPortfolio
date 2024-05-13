@@ -1,4 +1,4 @@
- ASP.NET Mvc Dinamik Admin Panelli Portfolyo Projesi
+## ASP.NET Mvc Dinamik Admin Panelli Portfolyo Projesi
 
 Bu proje, ASP.NET Mvc kullanılarak geliştirilmiş dinamik admin paneli ve portföy projesidir.
 
@@ -29,7 +29,6 @@ Proje'yi çalıştırmak için aşağıdaki adımları izleyin:
 4. Tarayıcınızda `https://localhost:port` adresine giderek projeyi görüntüleyin.
 
 # Projeye Ait Ekran Görüntüleri
-![Ekran görüntüsü 2024-05-13 212632](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/0cf3df63-ea33-4ac6-bb22-0ee2182d4171)
 ![Ekran görüntüsü 2024-05-13 222629](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/08f8ffc1-8737-4b41-b8b9-a2d1392ea499)
 ![Ekran görüntüsü 2024-05-13 222633](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/67a65e09-5b86-4f4e-90c6-6acea1ab3cee)
 ![Ekran görüntüsü 2024-05-13 222649](https://github.com/Alkanarsln/StellerAcunMedyaAkademiPortfolio/assets/133706209/81c96585-7131-4af3-b5bc-b69483fe7ff4)
