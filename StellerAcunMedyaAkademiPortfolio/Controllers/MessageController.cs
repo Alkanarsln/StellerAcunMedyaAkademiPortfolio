@@ -30,19 +30,6 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             db.SaveChanges();
             return View(message);
         }
-
-        [HttpGet]
-        public ActionResult AddMessage()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult AddMessage(TblMessage message)
-        {
-            db.TblMessage.Add(message);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
         [HttpGet]
         public ActionResult UpdateMessage(int id)
         {
@@ -58,6 +45,12 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             value.Email = tblMessage.Email;
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult ReadMessages()
+        {
+            var values = db.TblMessage.Where(x => x.IsRead == true).ToList();
+            return View(values);
         }
     }
 }

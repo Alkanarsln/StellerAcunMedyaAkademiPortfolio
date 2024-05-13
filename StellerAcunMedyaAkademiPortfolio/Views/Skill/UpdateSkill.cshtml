@@ -4,18 +4,14 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>UpdateSkill</h2>
+<h2>Yetenek Güncelleme Sayfası</h2>
 
 <br />
 <form method="post">
     <input type="hidden"  name="SkillId" value="@Model.SkillId"/>
     <input type="text" name="SkillName" class="form-control" value="@Model.SkillName" placeholder="Yetenek Adı Giriniz" required />
     <br />
-    <input type="text" name="Title" class="form-control" value="@Model.Title" placeholder="Başlık Giriniz" required />
-    <br />
     <input type="number" name="Value" class="form-control" value="@Model.Value" placeholder="Derecesini Giriniz" required />
-    <br />
-    <input type="text" name="Description" class="form-control" value="@Model.Description" placeholder="Açıklama Giriniz" required />
     <br />
     <button class="btn btn-outline-warning">Güncelle</button>
 </form>

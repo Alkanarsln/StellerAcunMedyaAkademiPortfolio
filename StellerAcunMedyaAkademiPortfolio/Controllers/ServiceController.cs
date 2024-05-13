@@ -30,8 +30,9 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult AddService (TblService service)
+        public ActionResult AddService(TblService service)
         {
+            service.ServiceStatus = false;
             db.TblService.Add(service);
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -49,6 +50,21 @@ namespace StellerAcunMedyaAkademiPortfolio.Controllers
             value.ServiceIconUrl = tblService.ServiceIconUrl;
             value.ServiceName = tblService.ServiceName;
             value.ServiceStatus = tblService.ServiceStatus;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult MakeActive(int id)
+        {
+            var value = db.TblService.Find(id);
+            value.ServiceStatus = true;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult MakePassive(int id)
+        {
+            var value = db.TblService.Find(id);
+            value.ServiceStatus = false;
             db.SaveChanges();
             return RedirectToAction("Index");
         }
